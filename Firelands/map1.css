@@ -1,0 +1,55 @@
+/* .footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 20%;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#startVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#user-levels {
+  display: block;
+  position: fixed;
+  width: 1000px;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+#super-admins,
+#admins,
+#editors,
+#contributors,
+#unassigned {
+  width: 200px;
+  height: 190px;
+  padding: 5px 10px;
+  margin-right: 3px;
+  background: #eee;
+  text-align: center;
+}
+.user {
+  width: 100px;
+  padding: 0 5px;
+  display: block;
+  margin: 0 auto 3px;
+  text-align: center;
+  border: 1px solid #aaa;
+  background: #ddd;
+  cursor: move;
+}
+
+.clear {
+  clear: both;
+}

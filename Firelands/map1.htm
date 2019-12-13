@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="map1.css" />
+    <title>Ship Command Center</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="startVideo">
+      <source src="../Images/stars.mp4" type="video/mp4" />
+    </video>
+
+    <section id="user-levels">
+      <div
+        id="unassigned"
+        ondrop="dropUser(this, event)"
+        ondragenter="return false"
+        ondragover="return false"
+      >
+        Inventory
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Spade</a
+        >
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Radar</a
+        >
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Cat</a
+        >
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Grapple</a
+        >
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Cat Food</a
+        >
+        <a draggable="true" class="user" ondragstart="dragUser(this, event)"
+          >Cage</a
+        >
+      </div>
+
+      <div
+        id="admins"
+        ondrop="dropUser(this, event)"
+        ondragenter="return false"
+        ondragover="return false"
+      >
+        Admins
+      </div>
+      <div
+        id="contributors"
+        ondrop="dropUser(this, event)"
+        ondragenter="return false"
+        ondragover="return false"
+      >
+        Contributors
+      </div>
+
+      <div
+        id="editors"
+        ondrop="dropUser(this, event)"
+        ondragenter="return false"
+        ondragover="return false"
+      >
+        Editors
+      </div>
+      <div class="clear"></div>
+    </section>
+    <script src="map1.js"></script>
+  </body>
+</html>
